@@ -90,13 +90,12 @@ README: contiene la finalidad del repositorio, como usarlo, revisar otros reposi
 
 
 
-1:47:10 - Fusionar Ramas (Merge)
-1:56:11 - Merge Conflicts 
+1:56:11 - Merge Conflicts //quedamos aca!
 2:12:47 - Git ignore (.gitignore)
 2:27:20 - Alias en GIT
 2:31:52 - Git Reflog
 2:38:36 - Introducción a GitHub
-3:13:00 - Git Pull & Git Fetch
+3:13:00 - Git Pull & Git Fetch //quedamos acá!
 3:24:33 - Migrar repositorio local
 3:32:24 - Forks y contribuciones
 3:38:08 - Pull Requests
