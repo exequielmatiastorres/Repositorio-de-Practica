@@ -1,3 +1,66 @@
+sistema de control de versiones distribuido: Significa que cada desarrollador tiene una copia exacta del proyecto, tambien contas con una copia exacta de todo el historial del proyecto.
+
+*Eficiente
+*Seguro
+*Flexibilidad
+*Ramas de desarrollo.
+*Tiene 3 areas del desarrollo: directorio, area de trabajo(staging), repositorio.
+*revertir cambios
+
+Jerarquida de configuración de git
+*sistema - configuración aplicada para todo el equipo.
+*global - para todos los repositorios de un usuario.
+*local - repositorio donde estamos trabajando - carpeta.
+
+comandos:
+//haciendo configuraciones en global, se puede usar system o local
+git config --global user.name "name"- configuramos el nombre
+git config --global user.email "" - configuramos el email
+git config --global --list
+git config --global core.editor "code --wait" - forma de configurar de forma predeterminada visual studio code. - code es una palabra reservada que utiliza git para configurar vsc como editor de texto predeterminado.
+--wait cada cambio espera a que se cierre el editor de codigo para ejecutarse.
+
+git config --global color.ui - configramos el color de nuestra interfaz 
+git config --global core.autocrlf true (input en caso de linux, mac o unix)- auto carriage return line feed. Unicamente en windows es el valor true.
+
+//AREAS DE git
+*area de trabajo es el folder o carpeta.
+*staging area - donde subimos los cambios donde vamos a subir los cambios al repositorio.
+*repositorio - mismo folder.
+
+//MAS comandos (carpeta y directorio es lo mismo.)
+git init - forma de inicializar git.
+mkdir name - comando para crear carpetas
+rmdir name - comando para eliminar carpeta
+pwd - te indica la ruta en la cual estas ubicado.
+ls -a muestra los archivos ocultos.
+git rm --cached file - deuelve los archivos listos para agregar al repositorio al area de trabajo.
+
+git commit -m "message" -a // commit confirma los cambios realizados en los archivos, -m indica que vas a dejar un mensaje corto. 
+git coomit -a //salta el area de preparación y directamente comitea los archivos.
+touch name - crea un nuevo archivo
+git checkout <file>- deshace todos los cambios realizados desde el ultimo commit que no estan en el area de preparación. En caso de cambiarle de nombre, te trae el archivo completamente eliminado y te deja ambos.
+git reset --hard - elimina todos los cambios realizados. - hasta que sección los elimina?
+git mv nameArchivo nameArchivoNuevo - modifica el nombre de un archivo.
+git status -S //muestra menos información 
+git diff --staged - muestra la diferencia entre versiones.
+git show <file> - muestra toda la información del archivo que esta en el commit.
+git log - te muestra el id(hash o identificador) de todos los commits realizados.
+git log --oneline //muestra la misma información que git log pero de forma mas abreviada.
+
+git config --global core.abbrev <numero> - para indicar la cantidad de números del id o hash que queremos que nos muestre, configuración especial para repositorios grandes, si no se configura vamos a tener que utilizar el hash entero.
+git diff <commitHash> <commitHash> - muestra las diferencias entre ambos commits.
+git diff --name-only <commitHash> <commitHash>//muestra unicamente los nombres de los archivos que cambiaron.
+git diff --word-diff <commitHash> <commitHash> //
+
+
+
+
+///UNIR EL CONTENIDO SUPERIOR CON EL INFERIOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
 git config --local (aplicando configuraciones en local)
 git config --global (aplicando configuraciones en global)
 git config --global core.editor "code-wait"(forma de configurar visual studio code de forma predeterminada)
@@ -60,6 +123,8 @@ git branch -m modificar-dev modificar-text - cambia el nombre a una rama / prime
 git branch -m nombre nuevo - esto se puede hacer posicionado en la rama a la que queremos modificarle el nombre.
 git merge *rama a fusionar* - debemos estar posicionados en la rama donde vamos a realizar la fusion, no se elimina la rama, se fusionan los commits es decir, los cambios.
 
+git push -u origin master
 
 
 
+git remote -v (vemos los repositorios remotos conectados.)
