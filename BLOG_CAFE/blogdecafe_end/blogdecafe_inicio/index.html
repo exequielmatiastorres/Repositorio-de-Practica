@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><!--idioma -->
+<head>
+    <meta charset="UTF-8"><!--codificación -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--dependiendo del dispositivo se va a encargar de que muestre el contenido de forma proporcional-->
+    <meta name="description" content="Página web de blog de café">
+    <link rel="stylesheet" href="./CSS/normalize.css"> <!--es la primera libreria que se carga,a el normalize.-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <!-- prefetch: cargamos la siguiente pagina que esperamos que el usuario visite para brindar una mejor experiencia de usuario (se ve reflejado en network)-->
+    <link rel="prefetech" href="./nosotros.html" as="document">
+
+    <!-- PRELOAD: as es que tipo de documento es o como queremos cargarlo luego tenemos que indicarle el tipo de documento a cargar que se realiza con la etiqueta as-->
+    <link rel="preload" href="./CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="preload" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index.css" as="style">
+    <!--crossorigin:  al venir desde otra url se agrega. -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+
+    <link rel="preload" href="./img/blog1.jpg" as="image"><!--no cargar en caso de usar webp-->
+
+    <title>BlogDeCafé</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="contendor">
+            <div class=" barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+    
+                <nav class="navegacion">
+                    <a href="./nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="./cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <section class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+        <!-- article se utiliza para entradas de blog o noticias -->
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <!--pictuire: etiqueta similar a img pero soporta diferentes formatos de imagenes y dependiendo del navegador va a cargar el formato mas adecuado -->
+                    <picture>
+                        <!-- source: etiqueta sin cierre, tambien se agrega el uncoding o tipo de imagen -->
+                        <source loading="lazy" srcset="./img/blog3.webp" type="image/webp">
+                        <img src="./img/blog1.jpg" alt="imagen blog" loading="lazy">
+
+                    </picture>
+                </div>
+                
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de granos de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a><!--bloque y bloque con modificador-->
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img src="./img/blog2.jpg" alt="imagen blog" loading="lazy">
+                </div>
+                
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 deliciosas recetas de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a><!--bloque y bloque con modificador-->
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img src="./img/blog3.jpg" alt="imagen blog" loading="lazy">
+                </div>
+                
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a><!--bloque y bloque con modificador-->
+                </div>
+            </article>
+
+         
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros cursos y talleres</h3>
+            <!-- al tener un listado de curso vamos a seguir una buena practica y realizar una lista -->
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas de extracción de Café</h4>
+                    <p class="widger-curso__label">Precio
+                        <span class="widger-curso__info">Gratis</span>
+                    </p>
+                    <p class="widger-curso__label">Cupo
+                        <span class="widger-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más información sobre nuestros cursos</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 recetas de café para principiantes</h4>
+                    <p class="widger-curso__label">Precio
+                        <span class="widger-curso__info">Gratis</span>
+                    </p>
+                    <p class="widger-curso__label">Cupo
+                        <span class="widger-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más información sobre nuestros cursos</a> <!--Google penaliza los enlaces que contengan Mas información, deben contener un contenido un poco mas descriptivo.-->
+                </li>
+                
+            </ul>
+
+        </aside>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class=pie>
+            <h1 class="pie__titulo no-margin no-padding">Blog<span class="pie__span">DeCafé</span></h1>
+        <div class="contenedor__enlaces centrar-texto">
+            <a href="#" class="pie__enlace">Nosotros</a></li>
+            <a href="#" class="pie__enlace">Cursos</a></li>
+            <a href="#" class="pie__enlace">Contacto</a></li>
+        </div>
+    </footer>
+
+    <script src="./js/modernizr.js"></script>
+</body>
+</html>
+
+<!--los enlaces tienen que ser descriptivos por que de lo contrario google los penaliza perjudicando el CEO.
+
+Ligthouse(extensión de chrome): ejecuta una serie de pruebas para revisar si nuestro codigo sigue buenas practicas, revisa la carga del sitio web
+
+
+-->

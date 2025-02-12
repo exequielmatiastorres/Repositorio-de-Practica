@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <title>BlogDeCafé</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contendor">
+            <div class=" barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+    
+                <nav class="navegacion">
+                    <a href="./nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="./cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+        
+        <div class="contacto-bg"></div>
+
+        <form class="formulario no-margin no-padding">
+            <div class="campo">
+                <label class="campo__label" for="name">Nombre</label> <!--en este label indicas a que input pertenece-->
+                <input class="campo__field" type="text" placeholder="Tu Nombre" id="name">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label> <!--en este label indicas a que input pertenece-->
+                <input class="campo__field" type="email" placeholder="Tu Email" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Textarea</label> <!--en este label indicas a que input pertenece-->
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
+
+    </main>
+    
+
+    <!-- FOOTER -->
+    <footer class=pie>
+            <h1 class="pie__titulo no-margin no-padding">Blog<span class="pie__span">DeCafé</span></h1>
+        <div class="contenedor__enlaces centrar-texto">
+            <a href="#" class="pie__enlace">Nosotros</a></li>
+            <a href="#" class="pie__enlace">Cursos</a></li>
+            <a href="#" class="pie__enlace">Contacto</a></li>
+        </div>
+    </footer>
+</body>
+</html>

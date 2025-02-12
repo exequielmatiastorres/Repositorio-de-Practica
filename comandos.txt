@@ -1,0 +1,65 @@
+git config --local (aplicando configuraciones en local)
+git config --global (aplicando configuraciones en global)
+git config --global core.editor "code-wait"(forma de configurar visual studio code de forma predeterminada)
+git config --global color.ui true(las salidas de pantalla que devuelve git van a ser mas coloridas)
+git config --global core.autocrlf true //carriage return (salto de linea, unicamente en windows)
+git config --global core autocrlf input (input en caso de linux)
+git config --system (aplicando configuraciones en system)
+git config --list
+git init
+git add
+git commit 
+
+
+
+The default branch has been renamed!
+main is now named master
+
+If you have a local clone, you can update it by running the following commands.
+
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+git remote add origin *URL*
+
+README: contiene la finalidad del repositorio, como usarlo, revisar otros repositorios.
+
+
+
+1:47:10 - Fusionar Ramas (Merge)
+1:56:11 - Merge Conflicts 
+2:12:47 - Git ignore (.gitignore)
+2:27:20 - Alias en GIT
+2:31:52 - Git Reflog
+2:38:36 - Introducción a GitHub
+3:13:00 - Git Pull & Git Fetch
+3:24:33 - Migrar repositorio local
+3:32:24 - Forks y contribuciones
+3:38:08 - Pull Requests
+3:47:41 - GitHub Issues
+3:52:58 - Buenas Practicas en GIT
+4:01:13 - Proximos pasos
+4:10:04 - Cierre del curso
+
+
+MAS COMANDOS!!!
+
+git clone <url del repositorio en github> - clona el repositorio a la carpeta indicada en github
+git push origin master - estamos indicando que vamos a emitir los cambios a la rama master en el repositorio de origen, es decir el clonado
+
+
+git branch - muestra todas las ramas
+git branch modificaciones-dev - forma de crear una rama //se utiliza kebab case para escribirlas - el nombre de la rama tiene que ser descriptivo o intuitivo
+git checkout *Nombre de rama creada* - forma de movernos a otra rama (no se recomienda)
+git switch *nombre de la rama creada* - forma especifica creada para movernos a una rama.
+git checkout -b *rama nueva* - crea la rama y nos mueve a la rama creada
+git switch -c *rama nueva* - crea la rama y nos mueve a la rama creada
+git branch -d *rama name* - forma de eliminar una rama / primero tenemos que salir de la rama
+git branch -m modificar-dev modificar-text - cambia el nombre a una rama / primero tenemos que salir de la rama
+git branch -m nombre nuevo - esto se puede hacer posicionado en la rama a la que queremos modificarle el nombre.
+git merge *rama a fusionar* - debemos estar posicionados en la rama donde vamos a realizar la fusion, no se elimina la rama, se fusionan los commits es decir, los cambios.
+
+
+
+

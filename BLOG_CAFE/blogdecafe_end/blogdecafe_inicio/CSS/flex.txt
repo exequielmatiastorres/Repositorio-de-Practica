@@ -1,0 +1,21 @@
+Valores por defecto de flex
+
+flex-grow: 0; - Los elementos no crecen
+flex-shrink: 1; - Los elementos pueden reducir su tamaño a un tamaño mas pequeño que su flex-basis
+flex-basis: auto; los elementos tienen un tamaño base en auto
+
+.uno {
+  border: 1px solid green;
+  box-sizing: border-box;
+  opacity: .9;
+  width: 50px;
+  height: 50px;
+  background-color: #09f;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0; //valor en 0 hace que todos tengan el mismo ancho 
+  lo mismo es poner flex auto
+  /* flex: auto; */
+  flex: 1;
+
+}

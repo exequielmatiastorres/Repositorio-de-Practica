@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+    height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit; /*hereda del elemento padre es decir del html*/
+}
+body {
+    font-size: 1.6rem;
+    line-height: 2; /*interlineado*/
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 4.8rem;
+    margin: 0px;
+    height: 8rem;
+}
+h2 {
+    font-size: 4rem;
+    height: 4rem;
+}
+
+img {
+    max-width: 100%; /*forma de hacer imagenes responsivas*/
+}
+
+
+.titleUno {
+    font-size: 3rem;
+    color: cornflowerblue;
+    text-align: center;
+}
+
+.contenedor-principal {
+    height: 50vh;
+    border: 1px solid gray;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex2 {
+    display: flex;
+}
+
+.google {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.titulo2 {
+    font-size: 2.3rem;
+}
+
+.titulo3 {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.input-formulario{
+    width: 90%;
+    height: 5.5rem;
+    border: .2rem solid gray;
+    border-radius: 1rem;
+}
+
+.input-formulario::placeholder {
+    font-size: 1.8rem;
+}
+
+.text-formulario {
+    color: cornflowerblue;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 2.3rem;
+}
+
+.text-formulario-secundario{
+    width: 90%;
+    height: 4.2rem;
+    line-height: 2rem;
+}
+
+.text-formulario-tercero{
+    color: cornflowerblue;
+    width: 100%;
+    padding-left: 2.3rem;
+    height: 2.8rem;
+    font-weight: bold;
+}
+
+.boxButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+.primer-boton {
+    height: 4rem;
+    width: 12rem;
+    background-color: transparent;
+    border: none;
+    color: cornflowerblue;
+}
+
+
+.segundo-boton {
+    height: 4rem;
+    width: 12rem;
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid  cornflowerblue;
+    border-radius: .6rem;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.buttonLanguage {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.itemList {
+    color: gray;
+    
+}
+
+.caja-items {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+li {
+    list-style: none;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
