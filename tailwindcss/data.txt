@@ -1,0 +1,17 @@
+
+
+flowbite - coileccion de componentes para talwinds
+
+
+desventajas: html demasiado verboso
+
+
+sprite-svg: 
+
+
+brakepoints que estan documentados:
+
+sm
+md
+xl
+2xl
