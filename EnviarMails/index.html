@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Envio de Emails</title>
+</head>
+<body class="bg-[#e5e7eb]" >
+    <div class="max-w-3xl mx-auto p-10">
+        <h1 class="text-4xl text-gray-700 pt-32">Enviar Mails</h1>
+        <main class="bg-white rounded-lg shadow-xl p-10 mt-5">
+            <form action="">
+                <div class="flex flex-col space-y-2">
+                    <label for="email" class="font-regular font-medium">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email Destino, ej: mkt@empresa.com" class="border border-gray-300 px-3 py-2 rounded-lg">
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <label for="asunto" class="font-regular font-medium">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto Email" class="border border-gray-300 px-3 py-2 rounded-lg">
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <label for="mensaje" class="font-regular font-medium"> Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" type="text" placeholder="Mensaje de Email" class="border border-gray-300 px-3 py-2 rounded-lg h-36"></textarea>
+                </div>
+
+                <div id="botones" class=" flex gap-5 mt-5">
+                    <button class="flex-1 bg-pink-600 text-white flex justify-center gap-2 items-center p-3 opacity-50 ">
+                        <img src="./img/Send-white.png" alt="">
+                        Enviar
+                    </button>
+
+                    <button class="flex-1 bg-gray-800 text-white flex justify-center gap-2 items-center px-3">
+                        <img src="./img/garbage.png" alt="">
+                        Reset
+                    </button>
+                </div>
+            </form>
+
+            <div id="spinner" class="hidden justify-center mt-10">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

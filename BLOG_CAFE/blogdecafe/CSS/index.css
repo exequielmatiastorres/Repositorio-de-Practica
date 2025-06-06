@@ -233,7 +233,7 @@ img {
 
 .pie {
     background-color: var(--negro);
-    height: 10rem;
+    height: 15rem;
     padding-top: 3rem;
     padding-bottom: 4rem;
 }
@@ -243,18 +243,20 @@ img {
     text-align: center;
     color: var(--blanco);
     font-weight: normal;
-    height: 3.5rem;
+    height: 7rem;
+    
 
 }
 
 .pie__span {
     font-weight: 700;
+
 }
 
 .contenedor__enlaces {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .pie__enlace {
@@ -267,6 +269,7 @@ img {
         display: flex;
         justify-content: space-around; 
         align-items: center;
+        
    } 
 }
 
